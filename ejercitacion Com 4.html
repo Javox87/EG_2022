@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title>Complementario 4</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<!-- Punto 4A -->
+	<h2>4-a) Crear un formulario con un campo requerido</h2>
+	<form>
+	 <label for="nombre">Nombre:</label>
+	 <input type="text" name="nombre" id="nombre" required>
+	 <label for="apellido">Apellido:</label>
+	 <input type="text" name="apellido" id="apellido">
+	 <input type="submit" value="Enviar">
+	</form>
+	
+<!-- Punto 4B -->
+	<h2>4-b) Crear un formulario con un campo de tipo email y validar que funcione</h2>
+	<form action="mailto:javierramos1987@gmail.com" method="post" enctype="text/plain">
+	  Ingrese su nombre: 
+	  <input type="text" name="nombre" size="20">
+	  <br>
+	  Ingrese su Email: 
+	  <input type="text" name="dirección" size="30">
+	  <br>
+	  Comentario:
+	  <br>
+	  <textarea rows="5" cols="40" name="comentario"></textarea>
+	  <br>
+	  <input type="submit" value="enviar">
+	</form>
+	
+<!-- Punto 4C -->
+	<h2>4-c) Crear un formulario con un campo de tipo fecha y validar que funcione</h2>
+	<form name="fechanac" method="post" action="/send.php">
+	  Selecciona su fecha de nacimiento:
+	  <input type="date" name="fecha" min="1960-01-01" max="today"  />
+	</form>
+	
+<!-- Punto 4D -->
+	<h2>4-d) Crear un formulario con un campo de tipo color y validar que funcione</h2>
+	<form name="formulario" method="post" action="/send.php">
+		<input type="color" value="#0fff00">
+	</form>
+	
+<!-- Punto 4E -->
+	<h2>4-e) Crear un formulario con un campo de tipo number y validar que funcione. Además configurar
+valores mínimos y máximos permitidos.</h2>
+	<form name="formulario" method="post" action="">
+		<label for="tentacles">Numeros de (100-999):</label>
+		<input type="number" id="tentacles" name="tentacles" min="100" max="999">
+	</form>
+</body>
+</html
