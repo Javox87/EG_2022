@@ -1,0 +1,68 @@
+<style>
+    /*encabezados*/
+    h1,h2,h3,h4,h5,h6 
+    {
+      color: red;
+    }
+    p [href] {
+      color: black;
+    }
+    ul li#last {
+      color: yellow;
+    }
+    ul li [href] {
+      color: blue;
+    }
+    #imp {
+      color: green;
+    }
+    /*encabezados importantes*/
+
+    h1 #imp,
+    h2 #imp,
+    h3 #imp,
+    h4 #imp,
+    h5 #imp,
+    h6 #imp {
+      color: red;
+    }
+    
+    h1[title] {
+      color: blue;
+    }
+    ol a:link {
+      color: blue;
+      text-decoration: none;
+    }
+    ol a:visited {
+      color: blueviolet;
+    }
+  </style>
+  
+  <body>
+   1)
+    <h1>TITULO</h1>
+    <h2>TITULO2</h2>
+    <p>
+   2)   <a href="#">Black Link </a>
+    </p>
+    3)   <ul>
+      <li>Primer Linea</li>
+      <li><a href="#">Blue Link</a></li>
+    <li id="last">Ultima Linea</li>
+    </ul>
+    4)  <h1>
+    <p id="imp">Encabezado Importante</p>
+    </h1>
+    <h2>
+      <p id="imp">Encabezado Importante anidado</p>
+    </h2>
+      <p id="importante">Encabezado Importante fuera de titulo</p>
+   5) <h1 title="H1 CON TITLE">H1 con titulo</h1>
+  
+   6) <ol>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+    </ol>
+  </body>
+  
